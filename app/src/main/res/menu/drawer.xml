@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_receivables"
+            android:icon="@drawable/rec_icon_menu"
+            android:title="@string/title_receivables"/>
+        <item
+            android:id="@+id/drawer_payables"
+            android:icon="@drawable/payables_icon_menu"
+            android:title="@string/title_payables"/>
+
+        <item
+            android:id="@+id/drawer_company_profile"
+            android:icon="@drawable/company_profile_icon"
+            android:title="@string/title_companyProfile"/>
+
+        <item
+            android:id="@+id/drawer_logout"
+            android:icon="@drawable/logout_menu"
+            android:title="@string/title_logout"/>
+    </group>
+</menu>
+
+

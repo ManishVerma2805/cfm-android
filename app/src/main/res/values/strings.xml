@@ -1,0 +1,111 @@
+<resources>
+    <string name="app_name">GetFiscal</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+
+
+    <string name="app_name_get">get</string>
+    <string name="app_name_fiscal">fiscal</string>
+
+    <color name="app_blue">#0CB6E7</color>
+    <color name="app_black">#000000</color>
+    <color name="text_primary">#757575</color>
+    <color name="text_primary_dark">#212121</color>
+    <color name="text_accent">#9E9E9E</color>
+    <color name="text_accent_translucent">#E0E0E0</color>
+    <color name="text_accent_bright">#EEEEEE</color>
+
+    <color name="band_overdue">#F44336</color>
+    <color name="band_within_week">#FF9800</color>
+    <color name="band_within_month">#8BC34A</color>
+    <color name="band_later">#9E9E9E</color>
+    <color name="accent_translucent">#36CCEF</color>
+    <color name="accent_translucent_button">#440CB6E7</color>
+    <color name="accent_button">#0CB6E7</color>
+
+    <color name="primary">#2C3D51</color>
+    <color name="primary_dark">#2C3D51</color>
+    <color name="accent">#6f0CB6E7</color>
+    <color name="accent_bright">#550CB6E7</color>
+    <color name="ripple">#0CB6E7</color>
+    <color name="white">#ffffff</color>
+    <color name="toolbar_background">#2C3D51</color>
+
+
+
+    <string name="letsGetStarted">Let\'s get started...</string>
+    <string name="companyName">Company Name (required)</string>
+    <string name="companyPhone">Phone Number (optional)</string>
+    <string name="companyEmail">E-mail (required)</string>
+    <string name="companyPassword">Password (required)</string>
+
+    <string name="register">Register</string>
+    <string name="alreadyOnGetFiscal">Already On GetFiscal</string>
+
+
+    <string name="loginEmail">E-mail</string>
+    <string name="loginPassword">Password</string>
+    <string name="signupHere">Not registered? Sign up here.</string>
+    <string name="signin">Sign in</string>
+    <string name="signinpromt">Please sign in</string>
+
+
+    <string name="msg_add_transaction_in">Press + to add \nReceivable Transaction</string>
+    <string name="msg_add_transaction_out">Press + to add \nPayable Transaction</string>
+
+
+    <string name="title_company">Company</string>
+    <string name="title_companyProfile">Company Profile</string>
+    <string name="title_receivables">Receivables</string>
+    <string name="title_payables">Payables</string>
+
+
+
+    <string name="transactionAmount">AMOUNT</string>
+    <string name="transactionDate">DATE</string>
+    <string name="transactionParty">DEBTOR NAME</string>
+    <string name="transactionPartyVendor">CREDITOR NAME</string>
+    <string name="transactionPartyPhone">PHONE</string>
+
+    <string name="transactionDueAfter">Due after</string>
+    <string name="transactionDueDate">Due Date</string>
+
+
+
+
+    <string name="markReceivePaymentCompleted">Receive Payment</string>
+    <string name="markPaidPaymentCompleted">Make Payment</string>
+    <string name="markCompleted">Mark this transaction completed</string>
+    <string name="markNotCompleted">This transaction is pending</string>
+    <string name="title_activity_transaction_in_complete">Receivable</string>
+    <string name="title_activity_transaction_out_complete">Payable</string>
+
+
+    <string name="title_activity_add_transaction_in">Add Receivable</string>
+    <string name="title_activity_add_transaction_out">Add Payable</string>
+
+    <string name="title_activity_transaction_in">Receivable</string>
+    <string name="title_activity_transaction_out">Payable</string>
+
+
+    <string name="transactionRefNo">Reference Number</string>
+    <string name="sendReminder">Remind Party</string>
+    <string name="sendSMS">Send SMS</string>
+    <string name="makeCall">Call</string>
+
+
+    <string name="action_create">Create</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+
+    <string name="title_logout">Logout</string>
+</resources>

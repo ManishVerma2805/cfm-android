@@ -1,0 +1,147 @@
+<!--
+
+  -->
+
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/includes_toolbar"/>
+
+
+
+        <LinearLayout
+            android:id="@+id/tabBar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/toolbar_background">
+
+            <RelativeLayout
+                android:id="@+id/inflowHolder"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/inflowicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/recievable_tab_selector"
+                    android:duplicateParentState="true"/>
+
+                <View
+                    android:id="@+id/inflowindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:duplicateParentState="true"
+                    android:background="@drawable/tab_indicator"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/outflowHolder"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/outflowicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/payable_tab_selector"
+                    android:duplicateParentState="true"/>
+
+                <View
+                    android:id="@+id/outflowindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:duplicateParentState="true"
+                    android:background="@drawable/tab_indicator"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/loanHolder"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/loanicon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/loan_tab_selector"
+                    android:duplicateParentState="true"/>
+
+                <View
+                    android:id="@+id/loanindicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1dp"
+                    android:duplicateParentState="true"
+                    android:background="@drawable/tab_indicator"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/contentContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/abc_cab_background_top_material">
+
+            <TextView
+                android:id="@+id/msg_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/msg_add_transaction_in"
+                android:visibility="gone"/>
+            <ListView
+                android:id="@+id/transactionList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:listSelector="@drawable/list_selector">
+            </ListView>
+            <ImageView
+                android:id="@+id/createTransaction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/add_button"
+                android:layout_marginBottom="32dp"
+                android:layout_marginRight="32dp"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_header"
+        app:menu="@menu/drawer"/>
+
+</android.support.v4.widget.DrawerLayout>

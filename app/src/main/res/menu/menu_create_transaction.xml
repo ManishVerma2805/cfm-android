@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.unbarrier.cashflowtracker.activities.TransactionDetailsActivity">
+    <item android:id="@+id/action_create" android:title="@string/action_create"
+        android:icon="@drawable/save_icon"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_edit" android:title="@string/action_edit"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <item android:id="@+id/action_update" android:title="@string/action_save"
+        android:icon="@drawable/save_icon"
+        android:orderInCategory="100" app:showAsAction="always" />
+    <!--<item android:id="@+id/action_money_received" android:title="@string/markReceivePaymentCompleted"-->
+        <!--android:icon="@drawable/ic_money_in"-->
+        <!--android:orderInCategory="100" app:showAsAction="always" />-->
+</menu>

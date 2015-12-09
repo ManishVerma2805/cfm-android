@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thank you for your request, we will process your request sortly"
+        android:textColor="#868686"
+        android:textSize="16sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_white_rounded"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:drawableRight="@drawable/email_icon"
+            android:hint="EMAIL"
+            android:inputType="textEmailAddress"
+            android:lines="1"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+            android:textColor="#1F1F29"
+            android:textColorHint="#1F1F29"
+            android:fontFamily="sans-serif-light"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="#E9E9E9" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:drawableRight="@drawable/phone_icon"
+            android:hint="PHONE"
+            android:inputType="phone"
+            android:lines="1"
+            android:padding="6dp"
+            android:singleLine="true"
+            android:textSize="15sp"
+
+            android:textColor="#1F1F29"
+            android:textColorHint="#1F1F29"
+            android:fontFamily="sans-serif-light"
+            />
+
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Error: Both email &amp; phone are required."
+        android:textColor="#F16F7B"
+        android:textSize="16sp"
+        android:layout_margin="20dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:visibility="gone"/>
+
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:background="@drawable/buildings_image"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/status_bar_height"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="20dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/cashflowsimplified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing=".2"
+        android:text="CASHFLOW  SIMPLIFIED"
+        android:textColor="#FFFFFF"
+        android:textSize="11sp"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/companyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cashflowsimplified"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Company Name"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:letterSpacing=".1"
+        android:fontFamily="sans-serif"/>
+
+
+</RelativeLayout>
